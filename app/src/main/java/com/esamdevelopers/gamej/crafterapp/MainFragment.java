@@ -30,13 +30,7 @@ public class MainFragment extends Fragment {
         if (getActivity() instanceof MainActivity){
             MainActivity activity = (MainActivity) getActivity();
             activity.onUpdateSubTitle(getString(R.string.title_nav_home));
+            activity.navigationView.setCheckedItem(R.id.nav_home);
         }
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        MainActivity activity = (MainActivity) getActivity();
-        activity.navigationView.setCheckedItem(R.id.nav_home);
     }
 }
