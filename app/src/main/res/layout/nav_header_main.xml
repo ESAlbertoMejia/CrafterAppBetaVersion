@@ -24,13 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:shadowColor="@android:color/white"
-        android:shadowDx="3"
-        android:shadowDy="-2"
-        android:shadowRadius="3"
         android:text="@string/user_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -39,11 +34,6 @@
         style="@style/Widget.AppCompat.Spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:shadowColor="@android:color/white"
-        android:shadowDx="3"
-        android:shadowDy="-2"
-        android:shadowRadius="3"
-        android:textColor="@android:color/black"
         android:text="android.studio@android.com" />
 
 </LinearLayout>
