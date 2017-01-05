@@ -18,11 +18,11 @@ import com.esamdevelopers.gamej.crafterapp.adaptador.BaseViewPagerAdapter;
 public class LetterFragment extends Fragment {
 
     private String[] tabs = {
-            "Cafés", "Crepas", "Reposteria"
+            "Bebidas", "Postres"
     };
 
     private String[] descriptions = {
-            "Smooties y Cafés", "Sabrosas crepas dulces y saladas", "Exquisitos pan dulces, pies y pasteles"
+            "Bebidas frías y calientes", "Ricos pies, pasteles, crepas y más..."
     };
 
     @Override
