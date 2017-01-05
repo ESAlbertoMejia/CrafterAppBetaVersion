@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Crafter App</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="communicate">Comunicar</string>
+    <string name="title_nav_share">Compartir</string>
+    <string name="title_nav_comments">Comentarios</string>
+    <string name="title_nav_home">Inicio</string>
+    <string name="title_nav_letter">Carta</string>
+    <string name="title_nav_news">Noticias</string>
+    <string name="user_name">User Name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
