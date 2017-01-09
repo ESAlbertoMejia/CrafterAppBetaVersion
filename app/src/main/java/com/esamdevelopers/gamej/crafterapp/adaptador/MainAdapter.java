@@ -26,9 +26,9 @@ public class MainAdapter extends RecyclerView.Adapter<MainHolder> {
             "Capuchino", "Crepa", "Pie"
     };
     String[] descriptions = {
-            "Bebida italiana preparada con café expreso y leche montada con el vapor para crear la espuma (en ocasiones lleva cacao o canela en polvo).",
-            "Se denomina crepe, crepa, o crep (del francés crêpe, y éste a su vez del latín crispus, ‘crespo’) a la receta europea de origen francés bretón, hecha fundamentalmente de harina de trigo. Se sirve habitualmente como base de un plato o postre, aplicándole todo tipo de ingredientes dulces o salados.",
-            "Postre hecho a base de requesón o queso crema o queso quark, azúcar y algunas veces otros ingredientes, tales como: huevos, crema de leche, frutas o bayas (fresas, moras, zarzamoras, mora azul, arándanos e, inclusive, limones o naranjas, etc.)."
+            "Bebida italiana preparada con café expreso y leche montada con el vapor para crear la espuma.",
+            "Se sirve habitualmente como base de un plato o postre, aplicándole todo tipo de ingredientes dulces o salados.",
+            "Postre hecho a base de requesón o queso crema o queso quark, azúcar decorados con bayas (fresas, moras, zarzamoras, mora azul, arándanos e, inclusive, limones o naranjas, etc.)."
     };
     String[] prices = {
             "$ 3.99", "$ 4.99", "$ 1.99"

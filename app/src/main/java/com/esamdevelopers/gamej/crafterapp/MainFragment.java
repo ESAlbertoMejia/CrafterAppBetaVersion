@@ -4,9 +4,13 @@ package com.esamdevelopers.gamej.crafterapp;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.esamdevelopers.gamej.crafterapp.adaptador.MainAdapter;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,9 +23,19 @@ public class MainFragment extends Fragment {
         return inflater.inflate(R.layout.app_bar_main, container, false);
     }
 
+    @SuppressWarnings("ConstantConditions")
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view_promotion);
+        MainAdapter adapter = new MainAdapter(getActivity());
+
+        if (recyclerView != null){
+            recyclerView.setHasFixedSize(true);
+            recyclerView.setAdapter(adapter);
+        }
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
     }
 
     @Override
