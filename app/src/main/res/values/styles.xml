@@ -21,4 +21,11 @@
         <item name="colorPrimary">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.MyRatingStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/colorSwitch</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="android:numStars">5</item>
+        <item name="android:rating">5.0</item>
+    </style>
+
 </resources>
