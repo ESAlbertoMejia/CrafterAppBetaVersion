@@ -5,7 +5,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.esamdevelopers.gamej.crafterapp.R;
 import com.esamdevelopers.gamej.crafterapp.holders.MainHolder;
@@ -53,24 +52,6 @@ public class MainAdapter extends RecyclerView.Adapter<MainHolder> {
         holder.title.setText(titles[position]);
         holder.description.setText(descriptions[position]);
         holder.price.setText(prices[position]);
-        holder.imagen.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                switch (position){
-                    case 0:
-                        Toast.makeText(context, "Posicion: " + position, Toast.LENGTH_SHORT).show();
-                        /*Intent capuchinoIntent = new Intent(context.getApplicationContext(), CapuchinoActivity.class);
-                        context.startActivity(capuchinoIntent);*/
-                        break;
-                    case 1:
-                        Toast.makeText(context, "Posicion: " + position, Toast.LENGTH_SHORT).show();
-                        break;
-                    case 2:
-                        Toast.makeText(context, "Posicion: " + position, Toast.LENGTH_SHORT).show();
-                        break;
-                }
-            }
-        });
     }
 
     @Override

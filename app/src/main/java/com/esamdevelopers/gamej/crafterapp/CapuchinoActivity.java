@@ -21,6 +21,11 @@ public class CapuchinoActivity extends AppCompatActivity {
 
         RatingBar ratingBar = (RatingBar) findViewById(R.id.ratingBar);
         TextView ratingResult = (TextView) findViewById(R.id.result_rating);
-        ratingResult.setText((int) ratingBar.getRating());
+
+        int rating = (int) ratingBar.getRating();
+
+        if (ratingBar != null){
+            ratingResult.setText(rating);
+        }
     }
 }
