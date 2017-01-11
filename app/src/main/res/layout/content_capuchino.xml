@@ -10,58 +10,76 @@
     tools:context=".CapuchinoActivity"
     tools:showIn="@layout/activity_capuchino">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:clipToPadding="true"
+        android:scrollbars="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:orientation="vertical" >
 
-            <RatingBar
-                android:id="@+id/ratingBar"
-                style="@style/AppTheme.MyRatingStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/result_rating"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/result_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="El capuchino (del italiano cappuccino) es una bebida italiana preparada con café expreso y leche montada con el vapor para crear la espuma (en ocasiones lleva cacao o canela en polvo). Un capuchino se compone de 125 ml de leche y 25 ml de café expreso. El capuchino, en las cafeterías de renombre, se sirve con una galleta o un bombón; aparte se sirve un vaso de agua con una cuchara. En Italia se consume mucho para el desayuno, junto con un croissant."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Los ingredientes tradicionales son café expreso y leche montada a espuma, en la siguiente proporción: 125 ml de leche y 25 ml de café expreso, en ocasiones también se le añade cacao en polvo o canela"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/shop_capuchino"
+                    style="@style/AppTheme.ButtonShop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:padding="8dp"
+                    android:text="Comprar Ya" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="El capuchino (del italiano cappuccino) es una bebida italiana preparada con café expreso y leche montada con el vapor para crear la espuma (en ocasiones lleva cacao o canela en polvo). Un capuchino se compone de 125 ml de leche y 25 ml de café expreso. El capuchino, en las cafeterías de renombre, se sirve con una galleta o un bombón; aparte se sirve un vaso de agua con una cuchara. En Italia se consume mucho para el desayuno, junto con un croissant."/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Los ingredientes tradicionales son café expreso y leche montada a espuma, en la siguiente proporción: 125 ml de leche y 25 ml de café expreso, en ocasiones también se le añade cacao en polvo o canela"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <Button
-            style="@style/AppTheme.ButtonShop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:padding="8dp"
-            android:text="Comprar Ya" />
-
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
