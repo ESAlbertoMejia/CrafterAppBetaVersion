@@ -2,11 +2,78 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".CapuchinoActivity"
     tools:showIn="@layout/activity_capuchino">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capuchino"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/AppTheme.MyRatingStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/result_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="El capuchino (del italiano cappuccino) es una bebida italiana preparada con café expreso y leche montada con el vapor para crear la espuma (en ocasiones lleva cacao o canela en polvo). Un capuchino se compone de 125 ml de leche y 25 ml de café expreso. El capuchino, en las cafeterías de renombre, se sirve con una galleta o un bombón; aparte se sirve un vaso de agua con una cuchara. En Italia se consume mucho para el desayuno, junto con un croissant."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Los ingredientes tradicionales son café expreso y leche montada a espuma, en la siguiente proporción: 125 ml de leche y 25 ml de café expreso, en ocasiones también se le añade cacao en polvo o canela"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            style="@style/AppTheme.ButtonShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_shopping_basket"
+            android:drawableTint="@android:color/white"
+            android:padding="5dp"
+            android:text="$ 3.99" />
+
+    </LinearLayout>
 
 </LinearLayout>

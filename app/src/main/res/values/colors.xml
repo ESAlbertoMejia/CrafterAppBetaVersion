@@ -3,6 +3,8 @@
     <color name="colorPrimary">#795548</color>
     <color name="colorPrimaryDark">#5D4037</color>
     <color name="colorAccent">#FF3D00</color>
+    <color name="startColor">#FFAB91</color>
+    <color name="endColor">#F4511E</color>
     <color name="blackSemiTransparent">#c8000000</color>
     <color name="colorSwitch">@android:color/darker_gray</color>
     <color name="colorPrice">#64DD17</color>

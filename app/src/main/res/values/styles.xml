@@ -25,7 +25,15 @@
         <item name="colorControlNormal">@color/colorSwitch</item>
         <item name="colorControlActivated">@color/colorAccent</item>
         <item name="android:numStars">5</item>
-        <item name="android:rating">5.0</item>
+        <item name="android:rating">2.5</item>
+    </style>
+
+    <style name="AppTheme.ButtonShop">
+        <item name="android:background">@drawable/bg_btn_shop</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>
